@@ -312,16 +312,21 @@ nav button:hover{
     border-radius: 1px;
     animation: come_up 2s linear 1;
 }
+.about:hover{
+    cursor: none;
+    box-shadow: 5px 5px rgb(151, 151, 151);
+}
 .me{
     width: 250px;
     height: 100%;
     margin-left: 0px;
 }
-
+.me:hover{
+    cursor: none;
+}
 .me img{
     width: 100%;
     height: 100%;
-    cursor: url("images/cursor.png"), auto;
 }
 
 .content{
@@ -376,7 +381,7 @@ nav button:hover{
     translate: -50%;
     height: 60px;
     background-color: #f7f7ff;
-    transform: perspective(140px) rotateX(32deg) translateY(2px);
+    transform: perspective(100px) rotateX(32deg) translateY(2px);
 }
 .profiles{
     position: fixed;
