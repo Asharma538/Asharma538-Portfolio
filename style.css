@@ -291,7 +291,6 @@ nav button:hover{
 @keyframes come_up {0%{opacity: 0.01; scale: 1;}100%{}}
 .txt{
     color: white;
-    width: 100%;
     padding: 40px 0px 0px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
