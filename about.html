@@ -10,24 +10,46 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="black_body">
-    <nav class="skl_nav">
+<body class="abt_body">
+    <div class="trapy"></div>
+    <nav class="abt_nav">
         <div class="navbs">
             <button class="" onclick="location.href='index.html' ">
                 Home
             </button>
+            <button class="timelineb" onclick="location.href='timeline.html'">
+                Timeline
+            </button>
             <button class="" onclick="location.href = 'skills.html' ">
                 Skills
             </button>
-            <button class="righ" onclick="location.href='about.html'">
-                About
-            </button>
         </div>
     </nav>
-    <main>
-        <div class="card">
-            <img src="" alt="">
+    <main class="about">
+        <div class="me">
+            <img src="/images/Anadi_Sharma.jpeg" alt="">
+        </div>
+        <div class="content">
+            Anadi Sharma
+            <div class="size-box" style="height: 12px;"></div>
+            <p>
+                Hi there! I'm currently pursuing my Bachelor of Technology in Computer Science and Engineering, with a focus on developing my technical skills and expertise.
+                <br><br>
+                Passionate about coding and enjoy taking on coding challenges through competitive programming.
+                I'm always striving to make progress and learn new things.
+                <br><br>
+                And it's not all about work and no play! I also believe in having fun along the way. Whether it's playing games with friends or exploring new hobbies, I always make time for activities that bring joy to my life.
+                <br><br>
+                I'm excited to see where my passion for tech takes me in the future!
+            </p>
         </div>
     </main>
+    <div class="trapy2"></div>
+    <div class="profiles">
+        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAADYCAMAAAA5zzTZAAAAe1BMVEUAAAD///8nJyf09PQrKyv7+/v29vZJSUnn5+cdHR3R0dFERERUVFTW1tZ2dnbv7++Hh4fe3t6+vr5PT0+YmJg/Pz+Ojo5iYmLk5OS4uLienp4ZGRnNzc1cXFysrKxra2szMzN+fn6kpKRycnIPDw+ysrIwMDA5OTkhISEnOnJ2AAAJTklEQVR4nO2d6XriOgyGmwKBsgQIoZS1rKX3f4Wn7ZkhIZKXSHJs0vl+nufg0dsktmxreYoqqDVKs2Q2b6+f/Grdns+SLB21qhj/ZPs/9pZJ2zMgVDtZ9mRJe6tn31BKPa/sYC1I493AN41B3V0sQDqe+Oaw0mTMJH1LfCNYK3njkD7G8/yrCZl06dv0ylqSSMdd33YT1FV/rkrS1LfRRKVVSQ++LSbrUIm0tfdtL0N73ElESXtn39aydEadJox06ttUtqZ2pH3fdgpoZEP65ttKEUGHCZD2fNsoJLCwlkk7vnfZUnrpGEhD36DZa6AnffVtn6BedaQb39aJaqMmbfm2TVgtJenCt2nC2qpIm/XufitVkL74NkxeHZQ0822WA00w0qZNR/9rjJA2aSnNlUDSjm+bHCkGpE38Sr+VAVLfFllr8HrZTPvpamv5/5dJH+UoMMtPTjrLvc0v0hKp7V/Ir0pOe5Ra7DG396Sxeyv5WsPjoY6FAxvfke7c28nWR3lv/SPzwfTujnRWg6VMPSvuSI23gbMi6SMspsqbb+MxSadA+gAHnzsVaDQ2/bRfIA3fbdgrQc3WZwXS8D9T5RXaD4ReswJpLcZytNaBGq/uc1Ljm+5d+ov9keHX4xtp+BPSRktqeif7N9JLLdZyZIjBMQQqXG6k4W/C9aDRu/7XrzfS8K/6DaQGgMON1PAnCUAGUoOf/34jHdZjLkOGIEiDQzi8kc7rMZchreNgdNvnN9LwAnfL0q+nplWyfSMNN3j3r85aUtOM+uyH9Ny+fl7bVeOAdK+vcc9ZL+l5ODlu7uMsepvd69Yy2uBDQ2p0B+oj/Tik6smzl06uFmMc1QMYf1sT6XBnDKeOWhfz2SQWTfWjvfGndZDOd7aZHvHFsCieFX8wi9NB96QnJNRLo6n+8OsFRbXx71yTTiol7vwo1k8ucO82tooqckt6qM5pZn0vPdaVnS0uSRfmWUillvZ9fN/czren1ud87khfDEcEBvX19gwnq9UqW1SIynBGqndSbSR8KuuIdN1ng369maImuSHdovdE1SV5OuCENNPbX0GC138uSPU75mqSC3lzQKr0TUkSCx+XJ7XO77XUWCibRZpU5YIz1JJBlSY1g76lx2Q4G+w/9oPZMDmmhozRSOrGSJjUYPZ0hW2vFivDpy3yrcqSajdo00x9/Nh+1cJKJGSJkl40xqamTNaBbnESiAmTJNW4uksbV3ytyQbmO8GCpF31E7E9NW+rnys7PUCQVOXrtqrc+AyVe3fuWiNHqtqOVv3EVI/VdLtvkhhpojCw+rWsaiRmtQUxUoV5lNoBqg+el1coRYq/c8RU8w/8Y+Xta4RIZ6hpdDcOdypZ868QKerhxPQh8Y0CyyuUIV1gdnU+GCOCHNkfcaJOZEjRPSmvkAk6LXF2NSKk75hV3BI8B+GHKkKKfaV8nxzzghlfqgQpNvFKZC9gaw19+pUgxdZSiXxdbJ6jr6kSpKIGFYX9Ccn5sQKk2LaUOlZJyMjkjaoAKXKkInX0jkRwkOuk8EnbyB9erOAQMjY16o9Piry8crcpSNoI9fXlkyI7cLkQxGc4OPWckE8KbeGeDhSF1TiiiU2KuA2S0d/IAQTxUpVNityV0gZSCA5PnAXYpPAzlU1HgeMTPw42KdwyyyZplDOIyS41l/QTvl2ydaTm8B+wiRqF4pLCCUk6Bxvm1tJ2D1zSg9RnpBRcZ2i+A5d0BeyQLoMLL/Boky+XFNohXdgYepu04wwuKVwETqRx1IKHVDR/kEsKj5CkU5PhISFt48YlhYEN0hlGcB2jnYVySeFJL2kYncC/QCtX9Y/UVr/n7f09MxJcZaQzdkNZZXx4DrTDZC4pPKdsqjd4AHZIe/gwot+Ph/97dm2/ZyeOXP3J5rnA0xVixap/J2bWglvxpp6CDqEpDT3Z/j23Fch619QbqLpvFS0Ta4H4pFiRBZc3xdTlWuD2H4lGknqoyCMlRyQJkMK1XeyhIiNTX97Hi9Ihz3auIq8k9uNY5BXdAfsXTVdJWJJXIyMk3US9nrBBfUe94imKvEjmKzak90hmRXQ6yylE0ys4jViFMg7QdExOMnCoGQeKZB66ZXjGLquKvVRmEJ5QOaYN+oJn1QeRGaTKVOxQ/PG5IuuR52KKkaKLQkSZRFQjhZLB93uyMhXrwpdaVSaSR8i0xc6g/2hjm/fVVlePCil7WpcRv7PKiFcX9o+ObOtEqxzoOnkbqxx0dVUOBPa7spUrtKXLGJUrJBrPClcjMZQVma6wOgBDUzUSkcIr9VeYGV1Wp1uFmdPqYi4xGYs0npUmXdNqKerEytjNJV4JSrxAUix0I+Cgupe54FEVjaV6Jruo2MYrHnkvudssJ1X41KWTq0qwmYabyoroaQtBnNOUshxVy/ysVp4Y19te0iRnFVCx25pqeowKqE/sqrZTWiyOWoFWKu7I94BxW32aUGX7R+SrQ40CrCjuhLOOKvFJNZ+pJx01+1d1VP4fLq0LF6fuWrDW1M3hlJphO6mkowBUX4eObtZXf7PxKHPd7LDerivtU7bs36894/4yS2R2oHp566Qzn88rd9JhyROpB+Wk4Xe84inveBV+FzOe8i5m4Xem4ynvTBd+t0Ge8m6D4XeQ5OlwIw2/KyhPeVfQ8Du98pR3eg2/ey9Peffe8Dsy85R3ZA6/yzZPUU4afud0joqd04VPHQNTViBt9pTUL5BKJ46GpbhAygzIDVt/Iuj/kAq2lwpOuzvSJr++8R0pL342aG2je1KBLi6BKi2RNtdNisqkTXUeMkBKTKsPXjEgbeh2/BBBUlqRpdDVQkgb+VALIRfFDFKpkK6A1MFJ5dpwhqJi2aG7rOCmOUrbSEXatEmppSRt2Pt7HxVVymlv0vxbCnUrZ+83Z0tezqEEdQqacmsMOk0A0qaccoNwPlh7QiJBxb9gzJfjGke+hNVWgv9JpGGuX2HpRhipXFKDH63RkFuUNIqlY4nr1BUWZFSTPnJAwEFBpCJ92MNCZYKnkjQaP6K71FVHxatJ5YvUupcu31dHKl962K00KdxG0uhNum2BO50MofAG0q/P9TGe68SYtmIk/Vpcj7JleeU1OOJLaFXSL/WycL2mdYYXpaGRfsNekvDCgNvJxQ6zCum3WqM0Oyxm189aY8uBzp/X2eKQpaNKqUf/ATJpaM9BIUw7AAAAAElFTkSuQmCC" alt=""></a>
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt=""></a>
+        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD///+Hh4fs7Ozm5uadnZ2Ojo6EhIR5eXmrq6uTk5Ph4eGIiIikpKR8fHzw8PD5+fnIyMjPz8/V1dW2tra+vr5sbGxQUFAWFhYxMTEpKSnCwsJlZWWlpaU/Pz9JSUkgICA4ODhYWFhycnIlJSVAQECBfPBeAAAD1klEQVR4nO2da1vCMAxGqTBhVETGxQuggvr//6KiIOguyWhC1j3v+UxdzjPWdmmCnQ4AAAAAAAAAAAAAAAAAAAAAAAAAALDi/S2d+F6357N08GQdjAJD707xN9YBCZO6PIl1UIIs7goEnRu/WAcmxajQb8ebdWgyzEsFnbu1Dk6CokfwyMo6vHAWlYLOPVgHGEzxJHNkYh1gKNXf0R331iEGQgq6zDrEMPq0oXu1DjKIjGHYtw4yCGqe2RH1XLNhCLqxdZQhrDiGzjrKEG5ZhjEv+pyp1LlH6zADGLAMX63DDGDLMrSOMoRHjuCddZRBjBmGcW/blgzDoXWQQbwxDCPPLLb9S9rpDEnD6BNu1FyztA4wmPtqwbiXih+SSsPYcxjfVKVqFtbByVB+F7fWoUmxLZ5uslfrwARJ8ukM35obuKc//eM3b5vfN6tknk2n2STtb6xDAQAAAAAAQI3nwXA2mXrvv/a+y3X/2ToeWT6Sae79zPVmF8gh3I8SgvyYFTXm+t+Ax1F5Ri/Trp27Kb30gfyY8kq/Pd0/H38hyiHuUtUj2KszDKuzc1/0Tj78NCGv4NysYYZknvzEkLzfe/RKknUN3z310V+81lm6qiGv1OPAID5DXqXHkXVjDK95hrxCj1PmcRnWvYM7NA661AzrPYMHFO6iliGryqMA+SYPLcPumYbyp11KhlUdDrWv10BDz6u1KmYahSGnEKkU4ZeNcwzp95EghEsHGmgoPJ+eY0iPCaT9hqPWG4o+iecY1t9S10WyKbCZhpJrYjMNJSs+G2oouGBcwtDP0yRZzzynBekwJCLD5cnLwnbGHvYei2Eu2Ut3dP4gl5ZSNex+5AdveLtyuRyxpmFJhXiPM7ZXPPZChswcU2nOhXUXTQ153VLljZmsHI5Y5aCaYTc/7hfyaMcJ9uaqGVYeQzBWRrGpRsuwelNCd3nIdR8rGVLvP/RfEJtMlQz/n3P/hz42FeuvVjKkLstYcJptSD5ET7Sh1AuUzopPT/X0qi9Va65jSBcD0Q+iVM+cjiF9XXrRl9rUqBgycmX07l3qEErFsGrHtoc+u5F6Q1QxZKzWG/K6UhtTK8OH1hvS+zYYahqS8yAMYQhDGMKQNCTHwLDxhmS1CQxhaG7IrIKGIQxhCEMYwhCGMIShqWGdHlIYwhCGMIQhDGEIw6Ya1vrlDxjCEIYwhCEMW2pI/vYTDGFobriGYfSGZB8oDGEIQ3VDsucchjAUNTznN2gvY3glZHg77hLkx6TEmDHnx1eoy45b8Y/rAQAAAAAAAAAAAAAAAAAAAAAAAADi4ROq8EbESHvjyAAAAABJRU5ErkJggg==" alt=""></a>
+        <a href=""><img src="https://www.svgrepo.com/show/330519/gmail.svg" alt=""></a>
+    </div>
 </body>
 </html>

@@ -2,7 +2,7 @@ var c = document.getElementById("canv");
 var $ = c.getContext("2d");
 var w = (c.width = window.innerWidth);
 var h = (c.height = window.innerHeight);
-var c_s=0.5;
+var c_s=1;
 function hidecanvas(){
 	// c.style.visibility = "hidden";
 }

@@ -11,6 +11,9 @@ body{
 .white_body{
     background-color: rgb(232, 232, 232);
 }
+.abt_body{
+    background-color: rgb(0,3,34);
+}
 canvas{
     position: fixed;
     top: 0px;
@@ -22,19 +25,6 @@ canvas{
     height: 40px;
     width: 80px;
     border-radius: 8px;
-}
-.idx_nav{
-    background-image: linear-gradient(to bottom,white,white,white,white,rgb(127, 127, 127));
-    height: 40px;
-    padding: 12px 10px 10px 10px;
-    margin: 0px;
-}
-.skl_nav{
-    background-color: white;
-    border-bottom: 5px solid gray;
-    height: 40px;
-    padding: 12px 10px 10px 10px;
-    margin: 0px;
 }
 a{
     text-decoration: none;
@@ -57,6 +47,39 @@ nav button {
 nav button:hover{
     color: rgb(0, 195, 255);
 }
+.skl_nav{
+    background-color: #f7f7ff;
+    border-bottom: 5px solid gray;
+    height: 40px;
+    padding: 12px 10px 10px 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.abt_nav{
+    z-index: 1;
+    height: 42px;
+    padding: 12px 10px 10px 10px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+}
+.abt_nav button,.skl_nav button{
+    margin: 0px 50px 0px 50px;
+    background-color: #f7f7ff;
+    color: black;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+}
+
+.skl_nav button{
+    margin: 0px 80px;
+}
+
 .righ{
     position: relative;
     float: right;
@@ -67,10 +90,12 @@ nav button:hover{
 }
 .time-axis{
     position: absolute;
-    width: 48%;
+    width: 50%;
     height: 12300px;
     border-right: 1px dashed white;
     left: 0%;
+    top: 0px;
+    z-index: -1;
 }
 .main_timeline{
     width: 100%;
@@ -87,7 +112,6 @@ nav button:hover{
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
-    cursor:none;
 }
 .box:hover{
     opacity: 1;
@@ -96,12 +120,12 @@ nav button:hover{
 .boxl{
     background-image: linear-gradient(to bottom right,rgb(255, 42, 66),rgb(65, 138, 255));
     position: relative;
-    left: 47%;
+    left: 49%;
 }
 .boxr{
     background-image: linear-gradient(to top left,rgb(255, 79, 99),rgb(24, 113, 255));
     position: relative;
-    left: 20.5%;
+    left: 22.5%;
 }
 .desc{
     font-weight: 600;
@@ -238,7 +262,6 @@ nav button:hover{
     border-radius: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    opacity: 0.9;
     color: rgb(255, 255, 255);
     background-image: linear-gradient(to bottom right,rgb(57, 255, 235),rgb(0, 72, 255));
     transition: 0.8s;
@@ -249,8 +272,6 @@ nav button:hover{
 .skill:hover{
     scale: 1.1;
     border: none;
-    opacity: 1;
-
 }
 
 .skl_img img{
@@ -260,7 +281,7 @@ nav button:hover{
 }
 
 .skl_img{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -271,9 +292,103 @@ nav button:hover{
 .txt{
     color: white;
     width: 100%;
-    text-align: center;
     padding: 40px 0px 0px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
     font-weight: 600;
+    margin-left: 75px;
+}
+.about{
+    background-color: #f7f7ff;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-51%);
+    box-shadow: 15px 15px rgb(195, 194, 194);
+    transition: 0.5s;
+    display: flex;
+    border-radius: 1px;
+    animation: come_up 2s linear 1;
+}
+.me{
+    width: 250px;
+    height: 100%;
+    margin-left: 0px;
+}
+
+.me img{
+    width: 100%;
+    height: 100%;
+    cursor: url("images/cursor.png"), auto;
+}
+
+.content{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 35px 50px;
+    color: rgba(0, 97, 187, 0.905);
+}
+.content p{
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    width: 600px;
+    color: rgb(71, 71, 71);
+}
+.trapy{
+    position: fixed;
+    width: 87%;
+    left: 50%;
+    translate: -50%;
+    height: 70px;
+    background-color: #f7f7ff;
+    transform: perspective(150px) rotateX(-32deg) translateY(-2px);
+}
+.trapy_idx{
+    position: fixed;
+    z-index: 1;
+    width: 87%;
+    left: 50%;
+    translate: -50%;
+    top: 0px;
+    height: 70px;
+    background-color: #f7f7ff;
+    transform: perspective(150px) rotateX(-32deg) translateY(-2px);
+}
+.trapy2{
+    position: fixed;
+    bottom: 0px;
+    width: 40%;
+    left: 50%;
+    translate: -50%;
+    height: 70px;
+    background-color: #f7f7ff;
+    transform: perspective(140px) rotateX(32deg);
+}
+.trapy3{
+    position: fixed;
+    bottom: 0px;
+    width: 40%;
+    left: 50%;
+    translate: -50%;
+    height: 60px;
+    background-color: #f7f7ff;
+    transform: perspective(140px) rotateX(32deg) translateY(2px);
+}
+.profiles{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.profiles img{
+    width: 40px;
+    margin: 0px 30px 8px 30px;
+    transition: 0.1s;
+}
+.profiles img:hover{
+    transform: translateY(-2px);
 }
