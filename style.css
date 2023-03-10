@@ -2,6 +2,17 @@ body{
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 1000px) and (min-width: 429px){
+    body{
+        visibility: hidden;
+    }
+    .hid{
+        visibility: visible !important;
+    }
+}
+.hid{
+    visibility: hidden;
+}
 ::-webkit-scrollbar{
     width: 0px;
 }
@@ -125,7 +136,12 @@ nav button:hover{
 .boxr{
     background-image: linear-gradient(to top left,rgb(255, 79, 99),rgb(24, 113, 255));
     position: relative;
-    left: 22.5%;
+    left: 50%;
+    right: 48%;
+    transform: translateX(-96%);
+}
+.boxr:hover{
+    transform: translateX(-91.5%);
 }
 .desc{
     font-weight: 600;
@@ -245,12 +261,21 @@ nav button:hover{
 .skill_cntnr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    margin: 70px 80px;
+    margin: 70px 5%;
     column-gap: 40px;
     grid-template-rows: auto;
     row-gap: 35px;
 }
-
+@media screen and (max-width: 1435px) and (min-width: 1150px){
+    .skill_cntnr{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1150px) and (min-width: 1000px){
+    .skill_cntnr{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 .skill{
     font-size: 20px;
     display: flex;

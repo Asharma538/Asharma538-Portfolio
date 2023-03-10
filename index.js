@@ -180,11 +180,23 @@ window.addEventListener(
 	},
 	false
 );
+var direc = 1;
 window.addEventListener('click', (event) => {
-	c_s+=0.1;
-	if (c_s>3){
+	if (c_s==1){
 		c_s=0;
-		sp*=-1;
+	}
+	else if (c_s==-1){
+		c_s=0;
+	}
+	else{
+		if (direc==1){
+			c_s=-1
+			direc=-1;
+		}
+		else{
+			c_s=1;
+			direc=1;
+		}
 	}
 	const hidecanv = setTimeout(hidecanvas,5000);
 })
