@@ -12,8 +12,10 @@
     <link rel="shortcut icon" href="./images/cursor_.png" type="image/x-icon">
 </head>
 <body>
-    <div class="hid">Please consider opening this on a bigger screen</div>
     <div class="trapy_idx"></div>
+    <div class="wlcm-txt">
+        Heya, Anadi Sharma here
+    </div>
     <nav class="abt_nav">
         <div class="navbs">
             <button class="timelineb" onclick="location.href='timeline.html' ">
@@ -27,8 +29,23 @@
             </button>
         </div>
     </nav>
-    <canvas id="canv"></canvas>
     <div class="trapy3"></div>
-    <script src="index.js"></script>
+
+    <main id="main_canv"></main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="vanta_rings.js"></script>
+    <script>
+        VANTA.RINGS({
+          el: "#main_canv",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0x50c2c
+        })
+    </script>
 </body>
 </html>

@@ -1,18 +1,22 @@
+html{
+    height: 100%;
+    width: 100%;
+}
 body{
+    height: 100%;
+    width: 100%;
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
-@media screen and (max-width: 1000px) and (min-width: 429px){
-    body{
-        visibility: hidden;
-    }
-    .hid{
-        visibility: visible !important;
-    }
+
+.wlcm-txt{
+    color: white;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    font-size: 30px;
 }
-.hid{
-    visibility: hidden;
-}
+
 ::-webkit-scrollbar{
     width: 0px;
 }
@@ -25,7 +29,9 @@ body{
 .abt_body{
     background-color: rgb(0,3,34);
 }
-canvas{
+#main_canv{
+    height: 100%;
+    width: 100%;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -261,7 +267,8 @@ nav button:hover{
 .skill_cntnr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    margin: 70px 5%;
+    margin: 70px 5% 0px 5%;
+    padding-bottom: 70px;
     column-gap: 40px;
     grid-template-rows: auto;
     row-gap: 35px;
@@ -337,16 +344,12 @@ nav button:hover{
     animation: come_up 2s linear 1;
 }
 .about:hover{
-    cursor: none;
     box-shadow: 5px 5px rgb(151, 151, 151);
 }
 .me{
     width: 250px;
     height: 100%;
     margin-left: 0px;
-}
-.me:hover{
-    cursor: none;
 }
 .me img{
     width: 100%;
