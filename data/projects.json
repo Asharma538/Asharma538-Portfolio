@@ -1,0 +1,245 @@
+{
+    "projects" : [
+        {
+            "title": "Pizza Planet App",
+            "image": "./images/flutter-firebase.jpeg",
+            "description": "A Food Delivery App for Pizza Planet Restaurant",
+            "links": [
+                {
+                    "url": "https://github.com/Asharma538/pizza_planet_app",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                }
+            ]
+        },
+        {
+            "title": "IITJ Menu App",
+            "image": "./images/flutter-firebase.jpeg",
+            "description": "An App for displaying the monthly Mess Menu of IIT Jodhpur",
+            "links": [
+                {
+                    "url": "https://play.google.com/store/apps/details?id=com.devlup.menu_app_iitj",
+                    "icon": "https://www.vectorlogo.zone/logos/google_play/google_play-tile.svg",
+                    "alt": "Playstore Link"
+                },
+                {
+                    "url": "https://github.com/Asharma538/iitj_menu",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/naman280104",
+                    "avatar": "https://avatars.githubusercontent.com/u/103664513",
+                    "alt": "Naman Goyal"
+                }
+            ]
+        },
+        {
+            "title": "Travel Companion App",
+            "image": "./images/flutter-firebase.jpeg",
+            "description": "An App for posting trips and finding people whom you can go with",
+            "links": [
+                {
+                    "url": "https://github.com/Asharma538/travel_companion",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/lakshyajain-0291",
+                    "avatar": "https://avatars.githubusercontent.com/u/147808548",
+                    "alt": "Lakshya Jain"
+                },
+                {
+                    "url": "https://github.com/ArunCStop",
+                    "avatar": "https://avatars.githubusercontent.com/u/142008769",
+                    "alt": "Arun Kumar"
+                },
+                {
+                    "url": "https://github.com/radhika101205",
+                    "avatar": "https://avatars.githubusercontent.com/u/147368049",
+                    "alt": "Radhika Agarwal"
+                },
+                {
+                    "url": "https://github.com/3123divyakumar",
+                    "avatar": "https://avatars.githubusercontent.com/u/142649008",
+                    "alt": "Divya Kumar"
+                }
+            ]
+        },
+        {
+            "title": "App UpTime Tracker",
+            "image": "./images/App-uptime-tracker.jpeg",
+            "description": "A Linux app for tracking uptime of your installed Apps",
+            "links": [
+                {
+                    "url": "https://github.com/Asharma538/OS_Project",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                },
+                {
+                    "url": "https://github.com/Shubh-Goyal-07",
+                    "avatar": "https://avatars.githubusercontent.com/u/92088100",
+                    "alt": "Shubh Goyal"
+                },
+                {
+                    "url": "https://github.com/s-goyal23",
+                    "avatar": "https://avatars.githubusercontent.com/u/98302356",
+                    "alt": "Sukriti Goyal"
+                }
+            ]
+        },
+        {
+            "title": "Simpulum",
+            "image": "./images/unity-csharp.jpeg",
+            "description": "A Game for learning the Time Period of a Pendulum Experiment",
+            "links": [
+                {
+                    "url": "https://github.com/AgrawalDrishti/Unity_App_Simpulum",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                }
+            ]
+        },
+        {
+            "title": "RTVP WebApp",
+            "image": "./images/html-css-js.jpeg",
+            "description": "A WebApp for changing your camera bg with an Image/Video",
+            "links": [
+                {
+                    "url": "https://asharma538.github.io/Web-app-for-Real-Time-Video-Processing/",
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QI4omabzZxvmYFPytlmLmXqsFESjypXqow&usqp=CAU",
+                    "alt": "Website Link"
+                },
+                {
+                    "url": "https://github.com/anushkaa-ambuj/Web-app-for-Real-Time-Video-Processing",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/PJiyush",
+                    "avatar": "https://avatars.githubusercontent.com/u/101921903",
+                    "alt": "Piyush"
+                },
+                {
+                    "url": "https://github.com/anushkaa-ambuj",
+                    "avatar": "https://avatars.githubusercontent.com/u/92167974",
+                    "alt": "Anushka Ambuj"
+                },
+                {
+                    "url": "https://github.com/samarth333",
+                    "avatar": "https://avatars.githubusercontent.com/u/115178396",
+                    "alt": "Samarth Bhalerao"
+                }
+            ]
+        },
+        {
+            "title": "Tic-Tac-Toe",
+            "image": "./images/html-css-js.jpeg",
+            "description": "A Must try fun tic-tac-toe game with appealing UI",
+            "links": [
+                {
+                    "url": "https://asharma538.github.io/tic_tac_toe/",
+                    "icon": "data:image/png;base64,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",
+                    "alt": "Website Link"
+                },
+                {
+                    "url": "https://github.com/Asharma538/tic_tac_toe",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                }
+            ]
+        },
+        {
+            "title": "QuesPy",
+            "image": "./images/html-css-js-django.jpeg",
+            "description": "A Cloud sourcing model for creating large question bank for board exams",
+            "links": [
+                {
+                    "url": "https://github.com/Asharma538/QuesPy",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                },
+                {
+                    "url": "https://github.com/naman280104",
+                    "avatar": "https://avatars.githubusercontent.com/u/103664513",
+                    "alt": "Naman Goyal"
+                },
+                {
+                    "url": "https://github.com/AM-78",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616254",
+                    "alt": "Aakash Maheshwari"
+                },
+                {
+                    "url": "https://github.com/s-goyal23",
+                    "avatar": "https://avatars.githubusercontent.com/u/98302356",
+                    "alt": "Sukriti Goyal"
+                },
+                {
+                    "url": "https://github.com/g-harsha01",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616993",
+                    "alt": "Gandyadapu Sriharsha"
+                }
+            ]
+        },
+        {
+            "title": "Vending DBMS",
+            "image": "./images/mongo-react-node.jpeg",
+            "description": "A Website for Database Management of Vending Companies",
+            "links": [
+                {
+                    "url": "https://github.com/Asharma538/dbms-inventory-management-project",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                }
+            ]
+        }
+    ]
+}

@@ -2,13 +2,13 @@ html{
     height: 100%;
     width: 100%;
 }
+
 body{
     height: 100%;
     width: 100%;
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
-
 .wlcm-txt{
     color: white;
     position: fixed;
@@ -16,7 +16,6 @@ body{
     left: 20%;
     font-size: 30px;
 }
-
 ::-webkit-scrollbar{
     width: 0px;
 }
@@ -102,7 +101,7 @@ nav button:hover{
     float: right;
     margin: 0px 20px;
 }
-.timelineb{
+.projectsb{
     width: 90px;
 }
 .time-axis{
@@ -168,7 +167,6 @@ nav button:hover{
     width: 100%;
     height:100vh;
 }
-
 .circles{
     position: absolute;
     top: 0;
@@ -176,7 +174,6 @@ nav button:hover{
     width: 100%;
     height: 100%;
 }
-
 .circles li{
     position: absolute;
     display: block;
@@ -295,23 +292,20 @@ nav button:hover{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(to bottom right,rgb(57, 255, 235),rgb(0, 72, 255));
+    background-image: linear-gradient(to bottom right,rgba(37, 204, 255, 0.344),rgba(0, 14, 48, 0.581));
     transition: 0.8s;
     animation: come_up 2s linear 1;
     scale: 0.9;
 }
-
 .skill:hover{
     scale: 1.1;
     border: none;
 }
-
 .skl_img img{
     height: 55px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
 .skl_img{
     background-color: #ffffff;
     width: 100%;
@@ -329,6 +323,8 @@ nav button:hover{
     font-weight: 600;
     margin-left: 75px;
 }
+
+
 .about{
     background-color: #f7f7ff;
     width: 1000px;
@@ -355,7 +351,6 @@ nav button:hover{
     width: 100%;
     height: 100%;
 }
-
 .content{
     font-size: 25px;
     font-weight: 500;
@@ -370,6 +365,8 @@ nav button:hover{
     width: 600px;
     color: rgb(71, 71, 71);
 }
+
+
 .trapy{
     position: fixed;
     width: 87%;
@@ -410,6 +407,8 @@ nav button:hover{
     background-color: #f7f7ff;
     transform: perspective(100px) rotateX(32deg) translateY(2px);
 }
+
+
 .profiles{
     position: fixed;
     bottom: 0px;
@@ -423,4 +422,88 @@ nav button:hover{
 }
 .profiles img:hover{
     transform: translateY(-2px);
+}
+.more-about-me-link{
+    color: rgb(28, 77, 138);
+    font-size: 18px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Project Page */
+.project-tile-cntnr{
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.project-tile{
+    width: 280px;
+    height: 405px;
+    margin: 10px 40px 40px;
+
+    background-image: linear-gradient(to bottom right,rgba(2, 139, 181, 0.374),rgba(0, 14, 48, 0.393));
+    border-radius: 10px;
+    border: 2px solid rgb(211, 211, 211);
+    
+    .title{
+        margin: 15px 10% 10px;
+        color: rgb(255, 255, 255);
+        font-family: 'Courgette';
+        font-size: 18px;
+    }
+    img{
+        width: 270px;
+        height: 110px;
+        background-color: #000000ae;
+        padding: 10px 5px;
+    }
+    .project-desc{
+        margin: 5px 6% 20px;
+        width: 88%;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-family: 'Roboto';
+        color: rgb(176, 182, 206);
+        font-weight: 600;
+    }
+    .links{
+        margin: 5px 10%;
+        display: flex;
+    }
+    .link{
+        margin: 0px 5px;
+        color: white;
+        img{
+            padding: 2px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+    .hdg{
+        margin: 15px 6% 10px;
+        color: white;
+        font-family: 'Roboto';
+        color: rgb(176, 182, 206);
+        letter-spacing: 0.2px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .teammates{
+        margin: 0px 10%;
+        display: flex;
+    }
+    .teammates img{
+        padding: 0px;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 }
