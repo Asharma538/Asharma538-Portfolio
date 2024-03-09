@@ -63,6 +63,7 @@ nav button {
 nav button:hover{
     color: rgb(0, 195, 255);
 }
+
 .skl_nav{
     background-color: #f7f7ff;
     border-bottom: 5px solid gray;
@@ -83,17 +84,14 @@ nav button:hover{
     position: fixed;
     top: 0px;
 }
+
 .abt_nav button,.skl_nav button{
-    margin: 0px 50px 0px 50px;
+    margin: 0px 3vw 0px 3vw;
     background-color: #f7f7ff;
     color: black;
     font-weight: 600;
     border: none;
     font-size: 16px;
-}
-
-.skl_nav button{
-    margin: 0px 80px;
 }
 
 .righ{
@@ -261,25 +259,18 @@ nav button:hover{
         border-radius: 50%;
     }
 }
+
 .skill_cntnr{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 70px 5% 0px 5%;
     padding-bottom: 70px;
     column-gap: 40px;
     grid-template-rows: auto;
     row-gap: 35px;
 }
-@media screen and (max-width: 1435px) and (min-width: 1150px){
-    .skill_cntnr{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-}
-@media screen and (max-width: 1150px) and (min-width: 1000px){
-    .skill_cntnr{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
+
 .skill{
     font-size: 20px;
     display: flex;
@@ -314,6 +305,24 @@ nav button:hover{
     border-radius: 15px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 800px) and (min-width: 500px){
+    .skill_cntnr{
+        margin: 50px 0px;
+        column-gap: 30px;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 0px){
+    .skill_cntnr{
+        column-gap: 0px;
+        row-gap: 0px;
+        margin: 20px 0px;
+    }
+    .skill{
+        transform: scale(0.8);
+    }
+}
+
 @keyframes come_up {0%{opacity: 0.01; scale: 1;}100%{}}
 .txt{
     color: white;
@@ -327,8 +336,7 @@ nav button:hover{
 
 .about{
     background-color: #f7f7ff;
-    width: 1000px;
-    height: 500px;
+    width: 65vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -343,8 +351,7 @@ nav button:hover{
     box-shadow: 5px 5px rgb(151, 151, 151);
 }
 .me{
-    width: 250px;
-    height: 100%;
+    width: 16vw;
     margin-left: 0px;
 }
 .me img{
@@ -361,11 +368,10 @@ nav button:hover{
 .content p{
     font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    width: 600px;
+    font-size: 2.5vh;
+    width: 40vw;
     color: rgb(71, 71, 71);
 }
-
 
 .trapy{
     position: fixed;
@@ -397,6 +403,7 @@ nav button:hover{
     background-color: #f7f7ff;
     transform: perspective(140px) rotateX(32deg);
 }
+
 .trapy3{
     position: fixed;
     bottom: 0px;
@@ -413,11 +420,12 @@ nav button:hover{
     position: fixed;
     bottom: 0px;
     left: 50%;
+    display: flex;
     transform: translate(-50%);
 }
 .profiles img{
     width: 40px;
-    margin: 0px 30px 8px 30px;
+    margin: 0px 2vw 8px 2vw;
     transition: 0.1s;
 }
 .profiles img:hover{
@@ -431,6 +439,42 @@ nav button:hover{
     }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 600px){
+    .me{
+        width: 0px;
+    }
+    .about{
+        width: 90vw;
+    }
+    .content p{
+        width: 100%;
+    }
+    .trapy2{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px){
+    .abt_nav button,.skl_nav button{
+        font-size: 12px;
+        margin: 0px 2vw 0px 2vw;
+        width: 50px;
+    }
+    .me{
+        width: 0px;
+    }
+    .about{
+        width: 90vw;
+    }
+    .content p{
+        font-size: 10px;
+        width: 100%;
+    }
+    .trapy2{
+        width: 80vw;
+    }
+}
+
 /* Project Page */
 .project-tile-cntnr{
     width: 100%;
@@ -441,17 +485,30 @@ nav button:hover{
     padding-bottom: 70px;
 }
 
+.project-bg-text{
+    color: rgba(255, 255, 255, 0.04);
+    font-size: 12vw;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: -1;
+}
+
 .project-tile{
     width: 280px;
     height: 405px;
     margin: 10px 40px 40px;
-
-    background-image: linear-gradient(to bottom right,rgba(2, 139, 181, 0.374),rgba(0, 14, 48, 0.393));
+    background-image: linear-gradient(to bottom right,rgba(47, 148, 255, 0.126),rgba(0, 0, 0, 0.523));
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
+    transition: 0.1s;
     
     .title{
-        margin: 15px 10% 10px;
+        padding: 15px 10% 10px;
+        border-radius: 10px 10px 0px 0px;
         color: rgb(255, 255, 255);
         font-family: 'Courgette';
         font-size: 18px;
@@ -459,7 +516,7 @@ nav button:hover{
     img{
         width: 270px;
         height: 110px;
-        background-color: #000000ae;
+        background-color: rgb(0, 3, 34);
         padding: 10px 5px;
     }
     .project-desc{
@@ -505,5 +562,9 @@ nav button:hover{
         width: 40px;
         height: 40px;
         border-radius: 50%;
+    }
+
+    &:hover{
+        background-color: rgba(255, 0, 0, 0.150);
     }
 }
