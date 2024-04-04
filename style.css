@@ -502,10 +502,11 @@ nav button:hover{
     width: 280px;
     height: 405px;
     margin: 10px 40px 40px;
-    background-image: linear-gradient(to bottom right,rgba(47, 148, 255, 0.126),rgba(0, 0, 0, 0.523));
+    background-image: linear-gradient(to bottom right,rgba(0, 179, 255, 0.523),rgba(0, 229, 255, 0.126));
+    background-color: rgba(0, 17, 255, 0.15);
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
-    transition: 0.1s;
+    transition: 0.3s;
     
     .title{
         padding: 15px 10% 10px;
@@ -566,6 +567,6 @@ nav button:hover{
     }
 
     &:hover{
-        background-color: rgba(255, 0, 0, 0.150);
+        scale: 1.05;
     }
 }
