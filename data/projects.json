@@ -49,6 +49,11 @@
             "description": "An App for posting trips and finding people whom you can go with",
             "links": [
                 {
+                    "url": "https://play.google.com/store/apps/details?id=com.devluplabs.travel_companiion",
+                    "icon": "https://www.vectorlogo.zone/logos/google_play/google_play-tile.svg",
+                    "alt": "Playstore Link"
+                },
+                {
                     "url": "https://github.com/Asharma538/travel_companion",
                     "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
                     "alt": "Github Link"
