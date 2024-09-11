@@ -437,7 +437,7 @@
         let t;
         const { material: e } = this;
         (this.cont = new d.Group()),
-          this.cont.position.set(30, 0, 0),
+          this.cont.position.set(15, 0, 0),
           (this.cont.rotation.x = 0.06667),
           (this.cont.rotation.z = 0.16667),
           this.scene.add(this.cont);
