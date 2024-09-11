@@ -5,6 +5,10 @@
             "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
         },
         {
+            "name": "Angular",
+            "url": "https://cdn.iconscout.com/icon/free/png-256/free-angular-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-1-pack-logos-icons-3029847.png?f=webp&w=256"
+        },
+        {
             "name": "HTML",
             "url": "https://cdn-icons-png.flaticon.com/512/732/732212.png"
         },
@@ -58,11 +62,11 @@
         },
         {
             "name" : "Hadoop",
-            "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWS2gTt94pGQLbk12N5lw67kBceB1DXkmhtw&s"
+            "url" : "https://media.licdn.com/dms/image/C4D12AQHAg7BtGU2xUQ/article-cover_image-shrink_600_2000/0/1520204264252?e=2147483647&v=beta&t=_EQ1n4fQ5V9DFf3OUfqTMPBmG7SEPcL5Wkb8dJDRBfg"
         },
         {
             "name" : "Sqoop",
-            "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lZmHuD8JhKJ3Iph5SlvAj9UR3FN20KW9cA&s"
+            "url" : "https://media.licdn.com/dms/image/D5612AQGazbkmFSVoLA/article-cover_image-shrink_600_2000/0/1680797685026?e=2147483647&v=beta&t=LT0tucxGzCZmDMeCYIcqwB3SsYpTawTxipNOtkYvVvs"
         },
         {
             "name" : "Hive",
