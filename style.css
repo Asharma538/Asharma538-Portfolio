@@ -357,7 +357,10 @@ nav button:hover{
 .me img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
+
 .content{
     font-size: 4vh;
     font-weight: 500;
