@@ -1,6 +1,30 @@
 {
     "projects" : [
         {
+            "title": "Deployment Bot",
+            "image": "./images/react-node-docker-gcp.png",
+            "description": "Deploys any frontend website with Docker Img, GitHub Repo or Zip File",
+            "links": [
+                {
+                    "url": "https://github.com/AgrawalDrishti/SDE_Mini_Project",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                },
+                {
+                    "url": "https://github.com/Yatharths1",
+                    "avatar": "https://avatars.githubusercontent.com/u/151841358?v=4",
+                    "alt": "Yatharth Shukla"
+                }
+            ]
+        },
+        {
             "title": "Pizza Planet App",
             "image": "./images/flutter-firebase.jpeg",
             "description": "A Food Delivery App for Pizza Planet Restaurant",
