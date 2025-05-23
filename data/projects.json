@@ -1,12 +1,41 @@
 {
     "projects" : [
         {
-            "title": "Deployment Bot",
-            "image": "./images/react-node-docker-gcp.png",
-            "description": "Deploys any frontend website with Docker Img, GitHub Repo or Zip File",
+            "title": "Custom Kafka Impl.",
+            "image": "./images/kafka-project.png",
+            "description": "LinkedIn's Proposed Kafka Implementation in JavaScript",
             "links": [
                 {
-                    "url": "https://github.com/AgrawalDrishti/SDE_Mini_Project",
+                    "url": "https://github.com/AgrawalDrishti/SDE_Major_Project",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+                    "alt": "Github Link"
+                },
+                {
+                    "url": "https://notes.stephenholiday.com/Kafka.pdf",
+                    "icon": "https://cdn-icons-png.freepik.com/256/7407/7407709.png?semt=ais_hybrid",
+                    "alt": "LinkedIn's Paper Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                },
+                {
+                    "url": "https://github.com/Yatharths1",
+                    "avatar": "https://avatars.githubusercontent.com/u/151841358?v=4",
+                    "alt": "Yatharth Shukla"
+                }
+            ]
+        },
+        {
+            "title": "Deployment Bot",
+            "image": "./images/deployment-bot-project.png",
+            "description": "Deploys any application using its Docker Img, GitHub Repo or Zip File",
+            "links": [
+                {
+                    "url": "https://github.com/AgrawalDrishti/DeploymentBot",
                     "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
                     "alt": "Github Link"
                 }
@@ -26,7 +55,7 @@
         },
         {
             "title": "Pizza Planet App",
-            "image": "./images/flutter-firebase.jpeg",
+            "image": "./images/pizza-planet-app-project.png",
             "description": "A Food Delivery App for Pizza Planet Restaurant",
             "links": [
                 {
@@ -45,7 +74,7 @@
         },
         {
             "title": "IITJ Menu App",
-            "image": "./images/flutter-firebase.jpeg",
+            "image": "https://play-lh.googleusercontent.com/cAJ01ZCzINRNMFv0yQDCnTN8JEcAcAJLzbIPj7hXNaSHbZPO3gZKhzMlvJfoNz0wsg",
             "description": "An App for displaying the monthly Mess Menu of IIT Jodhpur",
             "links": [
                 {
@@ -69,7 +98,7 @@
         },
         {
             "title": "Travel Companion App",
-            "image": "./images/flutter-firebase.jpeg",
+            "image": "https://play-lh.googleusercontent.com/ZqML4eNZPwtbSb7E1m13Ct8z6Q23duSoK4rxwgEY1riwZwqivhMLbWk7329CWXj-WFo=w240-h480-rw",
             "description": "An App for posting trips and finding people whom you can go with",
             "links": [
                 {
@@ -108,7 +137,7 @@
         },
         {
             "title": "App UpTime Tracker",
-            "image": "./images/App-uptime-tracker.jpeg",
+            "image": "./images/app-uptime-tracker-project.png",
             "description": "A Linux app for tracking uptime of your installed Apps",
             "links": [
                 {
@@ -137,7 +166,7 @@
         },
         {
             "title": "Simpulum",
-            "image": "./images/unity-csharp.jpeg",
+            "image": "./images/simpulum-project.png",
             "description": "A Game for learning the Time Period of a Pendulum Experiment",
             "links": [
                 {
@@ -156,7 +185,7 @@
         },
         {
             "title": "RTVP WebApp",
-            "image": "./images/html-css-js.jpeg",
+            "image": "./images/rtvp-web-app-project.png",
             "description": "A WebApp for changing your camera bg with an Image/Video",
             "links": [
                 {
@@ -190,7 +219,7 @@
         },
         {
             "title": "Tic-Tac-Toe",
-            "image": "./images/html-css-js.jpeg",
+            "image": "./images/tic-tac-toe-project.png",
             "description": "A Must try fun tic-tac-toe game with appealing UI",
             "links": [
                 {
@@ -214,7 +243,7 @@
         },
         {
             "title": "QuesPy",
-            "image": "./images/html-css-js-django.jpeg",
+            "image": "https://raw.githubusercontent.com/Asharma538/QuesPy/eeb99edbb878966953e998de31124b6a57a6fce7/old/Q-removebg-preview.png",
             "description": "A Cloud sourcing model for creating large question bank for board exams",
             "links": [
                 {
@@ -253,7 +282,7 @@
         },
         {
             "title": "Vending DBMS",
-            "image": "./images/mongo-react-node.jpeg",
+            "image": "./images/vending-machine-project.png",
             "description": "A Website for Database Management of Vending Companies",
             "links": [
                 {
