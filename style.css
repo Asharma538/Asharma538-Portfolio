@@ -1,34 +1,40 @@
-html{
+html {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
-.wlcm-txt{
+
+.wlcm-txt {
     color: white;
     position: fixed;
     top: 20%;
     left: 20%;
     font-size: 30px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 0px;
 }
-.black_body{
+
+.black_body {
     background-color: rgb(0, 3, 34);
 }
-.white_body{
+
+.white_body {
     background-color: rgb(232, 232, 232);
 }
-.abt_body{
-    background-color: rgb(0,3,34);
+
+.abt_body {
+    background-color: rgb(0, 3, 34);
 }
-#main_canv{
+
+#main_canv {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -37,15 +43,18 @@ body{
     z-index: -1;
     transition: 1s;
 }
-.timeline{
+
+.timeline {
     height: 40px;
     width: 80px;
     border-radius: 8px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
+
 nav button {
     cursor: pointer;
     height: 38px;
@@ -60,11 +69,12 @@ nav button {
     color: white;
     border: 3px solid black;
 }
-nav button:hover{
+
+nav button:hover {
     color: rgb(0, 195, 255);
 }
 
-.skl_nav{
+.skl_nav {
     background-color: #f7f7ff;
     border-bottom: 5px solid gray;
     height: 40px;
@@ -73,7 +83,8 @@ nav button:hover{
     display: flex;
     justify-content: center;
 }
-.abt_nav{
+
+.abt_nav {
     z-index: 1;
     height: 42px;
     padding: 12px 10px 10px 10px;
@@ -85,7 +96,8 @@ nav button:hover{
     top: 0px;
 }
 
-.abt_nav button,.skl_nav button{
+.abt_nav button,
+.skl_nav button {
     margin: 0px 3vw 0px 3vw;
     background-color: #f7f7ff;
     color: black;
@@ -94,15 +106,17 @@ nav button:hover{
     font-size: 16px;
 }
 
-.righ{
+.righ {
     position: relative;
     float: right;
     margin: 0px 20px;
 }
-.projectsb{
+
+.projectsb {
     width: 90px;
 }
-.time-axis{
+
+.time-axis {
     position: absolute;
     width: 50%;
     height: 12300px;
@@ -111,68 +125,79 @@ nav button:hover{
     top: 0px;
     z-index: -1;
 }
-.main_timeline{
+
+.main_timeline {
     width: 100%;
     margin-top: 180px;
 }
-.box{
+
+.box {
     height: 200px;
     opacity: 0.90;
     color: white;
     font-weight: 600;
     font-size: 18px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 400px;
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
 }
-.box:hover{
+
+.box:hover {
     opacity: 1;
     scale: 1.05;
 }
-.boxl{
-    background-image: linear-gradient(to bottom right,rgb(255, 42, 66),rgb(65, 138, 255));
+
+.boxl {
+    background-image: linear-gradient(to bottom right, rgb(255, 42, 66), rgb(65, 138, 255));
     position: relative;
     left: 49%;
 }
-.boxr{
-    background-image: linear-gradient(to top left,rgb(255, 79, 99),rgb(24, 113, 255));
+
+.boxr {
+    background-image: linear-gradient(to top left, rgb(255, 79, 99), rgb(24, 113, 255));
     position: relative;
     left: 50%;
     right: 48%;
     transform: translateX(-96%);
 }
-.boxr:hover{
+
+.boxr:hover {
     transform: translateX(-91.5%);
 }
-.desc{
+
+.desc {
     font-weight: 600;
     font-size: 16px;
 }
-.small_div{
+
+.small_div {
     height: 150px;
 }
-.smallest_div{
+
+.smallest_div {
     height: 100px;
 }
 
 /* Animation-timeline page */
-.area{
+.area {
     position: fixed;
     z-index: -1;
     top: 0px;
     width: 100%;
-    height:100vh;
+    height: 100vh;
 }
-.circles{
+
+.circles {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.circles li{
+
+.circles li {
     position: absolute;
     display: block;
     list-style: none;
@@ -182,85 +207,97 @@ nav button:hover{
     animation: animate 15s linear infinite;
     bottom: -150px;
 }
-.circles li:nth-child(1){
+
+.circles li:nth-child(1) {
     left: 25%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
 }
-.circles li:nth-child(2){
+
+.circles li:nth-child(2) {
     left: 10%;
     width: 20px;
     height: 20px;
     animation-delay: 2s;
     animation-duration: 12s;
 }
-.circles li:nth-child(3){
+
+.circles li:nth-child(3) {
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
 }
-.circles li:nth-child(4){
+
+.circles li:nth-child(4) {
     left: 40%;
     width: 60px;
     height: 60px;
     animation-delay: 0s;
     animation-duration: 18s;
 }
-.circles li:nth-child(5){
+
+.circles li:nth-child(5) {
     left: 65%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
 }
-.circles li:nth-child(6){
+
+.circles li:nth-child(6) {
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
 }
-.circles li:nth-child(7){
+
+.circles li:nth-child(7) {
     left: 35%;
     width: 70px;
     height: 70px;
     animation-delay: 7s;
 }
-.circles li:nth-child(8){
+
+.circles li:nth-child(8) {
     left: 50%;
     width: 25px;
     height: 25px;
     animation-delay: 15s;
     animation-duration: 45s;
 }
-.circles li:nth-child(9){
+
+.circles li:nth-child(9) {
     left: 15%;
     width: 15px;
     height: 15px;
     animation-delay: 2s;
     animation-duration: 35s;
 }
-.circles li:nth-child(10){
+
+.circles li:nth-child(10) {
     left: 85%;
     width: 60px;
     height: 60px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
 @keyframes animate {
-    0%{
+    0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
 }
 
-.skill_cntnr{
+.skill_cntnr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -271,7 +308,7 @@ nav button:hover{
     row-gap: 35px;
 }
 
-.skill{
+.skill {
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -283,21 +320,24 @@ nav button:hover{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(to bottom right,rgba(37, 204, 255, 0.344),rgba(0, 14, 48, 0.581));
+    background-image: linear-gradient(to bottom right, rgba(37, 204, 255, 0.344), rgba(0, 14, 48, 0.581));
     transition: 0.8s;
     animation: come_up 2s linear 1;
     scale: 0.9;
 }
-.skill:hover{
+
+.skill:hover {
     scale: 1.1;
     border: none;
 }
-.skl_img img{
+
+.skl_img img {
     height: 55px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.skl_img{
+
+.skl_img {
     background-color: #ffffff;
     width: 100%;
     display: flex;
@@ -306,25 +346,35 @@ nav button:hover{
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 800px) and (min-width: 500px){
-    .skill_cntnr{
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    .skill_cntnr {
         margin: 50px 0px;
         column-gap: 30px;
     }
 }
-@media screen and (max-width: 500px) and (min-width: 0px){
-    .skill_cntnr{
+
+@media screen and (max-width: 500px) and (min-width: 0px) {
+    .skill_cntnr {
         column-gap: 0px;
         row-gap: 0px;
         margin: 20px 0px;
     }
-    .skill{
+
+    .skill {
         transform: scale(0.8);
     }
 }
 
-@keyframes come_up {0%{opacity: 0.01; scale: 1;}100%{}}
-.txt{
+@keyframes come_up {
+    0% {
+        opacity: 0.01;
+        scale: 1;
+    }
+
+    100% {}
+}
+
+.txt {
     color: white;
     padding: 40px 0px 0px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -334,41 +384,45 @@ nav button:hover{
 }
 
 
-.about{
+.about {
     background-color: #f7f7ff;
     width: 65vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-51%);
+    transform: translate(-50%, -51%);
     box-shadow: 15px 15px rgb(195, 194, 194);
     transition: 0.5s;
     display: flex;
     border-radius: 1px;
     animation: come_up 2s linear 1;
 }
-.about:hover{
+
+.about:hover {
     box-shadow: 5px 5px rgb(151, 151, 151);
 }
-.me{
+
+.me {
     width: 16vw;
     margin-left: 0px;
 }
-.me img{
+
+.me img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.content{
+.content {
     font-size: 4vh;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 35px 50px;
     color: rgba(0, 97, 187, 0.905);
 }
-.content p{
+
+.content p {
     font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.5vh;
@@ -376,7 +430,7 @@ nav button:hover{
     color: rgb(71, 71, 71);
 }
 
-.trapy{
+.trapy {
     position: fixed;
     width: 87%;
     left: 50%;
@@ -385,7 +439,8 @@ nav button:hover{
     background-color: #f7f7ff;
     transform: perspective(150px) rotateX(-32deg) translateY(-2px);
 }
-.trapy_idx{
+
+.trapy_idx {
     position: fixed;
     z-index: 1;
     width: 87%;
@@ -396,7 +451,8 @@ nav button:hover{
     background-color: #f7f7ff;
     transform: perspective(150px) rotateX(-32deg) translateY(-2px);
 }
-.trapy2{
+
+.trapy2 {
     position: fixed;
     bottom: 0px;
     width: 40%;
@@ -407,7 +463,7 @@ nav button:hover{
     transform: perspective(140px) rotateX(32deg);
 }
 
-.trapy3{
+.trapy3 {
     position: fixed;
     bottom: 0px;
     width: 40%;
@@ -419,68 +475,81 @@ nav button:hover{
 }
 
 
-.profiles{
+.profiles {
     position: fixed;
     bottom: 0px;
     left: 50%;
     display: flex;
     transform: translate(-50%);
 }
-.profiles img{
+
+.profiles img {
     width: 40px;
     margin: 0px 2vw 8px 2vw;
     transition: 0.1s;
 }
-.profiles img:hover{
+
+.profiles img:hover {
     transform: translateY(-2px);
 }
-.more-about-me-link{
+
+.more-about-me-link {
     color: rgb(28, 77, 138);
     font-size: 2.5vh;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 600px){
-    .me{
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    .me {
         width: 0px;
     }
-    .about{
+
+    .about {
         width: 90vw;
     }
-    .content p{
+
+    .content p {
         font-size: 14px;
         width: 100%;
     }
-    .trapy2{
+
+    .trapy2 {
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 600px) and (min-width: 0px){
-    .abt_nav button,.skl_nav button{
+@media screen and (max-width: 600px) and (min-width: 0px) {
+
+    .abt_nav button,
+    .skl_nav button {
         font-size: 12px;
         margin: 0px 2vw 0px 2vw;
         width: 50px;
     }
-    .me{
+
+    .me {
         width: 0px;
     }
-    .about{
+
+    .about {
         width: 90vw;
     }
-    .content p{
+
+    .content p {
         font-size: 10px;
         width: 100%;
     }
-    .trapy2{
+
+    .trapy2 {
         width: 80vw;
     }
 }
 
 /* Project Page */
-.project-tile-cntnr{
+.project-tile-cntnr {
     width: 100%;
     margin: 100px auto;
     display: flex;
@@ -489,43 +558,44 @@ nav button:hover{
     padding-bottom: 70px;
 }
 
-.project-bg-text{
+.project-bg-text {
     color: rgba(255, 255, 255, 0.04);
     font-size: 12vw;
     position: fixed;
     top: 75%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     z-index: -1;
 }
 
-.project-tile{
+.project-tile {
     width: 280px;
     height: 565px;
     margin: 10px 40px 40px;
-    background-image: linear-gradient(to bottom right,rgba(0, 179, 255, 0.523),rgba(0, 229, 255, 0.126));
+    background-image: linear-gradient(to bottom right, rgba(0, 179, 255, 0.523), rgba(0, 229, 255, 0.126));
     background-color: rgba(0, 17, 255, 0.15);
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
     transition: 0.3s;
-    
-    .title{
+
+    .title {
         padding: 15px 10% 10px;
         border-radius: 10px 10px 0px 0px;
         color: rgb(255, 255, 255);
         font-family: 'Courgette';
         font-size: 18px;
     }
-    img{
+
+    img {
         width: 270px;
         height: 270px;
         background-color: rgb(0, 3, 34);
         padding: 5px;
     }
 
-    .project-desc{
+    .project-desc {
         margin: 5px 6% 20px;
         width: 88%;
         font-size: 14px;
@@ -534,14 +604,17 @@ nav button:hover{
         color: rgb(176, 182, 206);
         font-weight: 600;
     }
-    .links{
+
+    .links {
         margin: 5px 10%;
         display: flex;
     }
-    .link{
+
+    .link {
         margin: 0px 5px;
         color: white;
-        img{
+
+        img {
             padding: 2px;
             width: 30px;
             height: 30px;
@@ -549,7 +622,8 @@ nav button:hover{
             background-color: white;
         }
     }
-    .hdg{
+
+    .hdg {
         margin: 15px 6% 10px;
         color: white;
         font-family: 'Roboto';
@@ -558,11 +632,13 @@ nav button:hover{
         font-weight: 500;
         font-size: 14px;
     }
-    .teammates{
+
+    .teammates {
         margin: 0px 10%;
         display: flex;
     }
-    .teammates img{
+
+    .teammates img {
         padding: 0px;
         margin-right: 10px;
         width: 40px;
@@ -570,7 +646,7 @@ nav button:hover{
         border-radius: 50%;
     }
 
-    &:hover{
+    &:hover {
         scale: 1.05;
     }
 }
