@@ -137,12 +137,18 @@ class CreateParticles {
   }
 
   bindEvents() {
+    // Mouse events
     document.addEventListener("mousedown", this.onMouseDown.bind(this));
     document.addEventListener("mousemove", this.onMouseMove.bind(this));
     document.addEventListener("mouseup", this.onMouseUp.bind(this));
+
+    // Touch events
+    document.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
+    document.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
+    document.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: false });
   }
 
-  onMouseDown() {
+  onMouseDown(event) {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
@@ -164,9 +170,50 @@ class CreateParticles {
     this.data.ease = 0.05;
   }
 
-  onMouseMove() {
+  onMouseMove(event) {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  }
+
+  // Add these new touch event handler methods
+  onTouchStart(event) {
+    // Prevent default to avoid scrolling
+    event.preventDefault();
+
+    const touch = event.touches[0];
+    // Convert touch to mouse coordinates
+    this.mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+
+    const vector = new THREE.Vector3(this.mouse.x, this.mouse.y, 0.5);
+    vector.unproject(this.camera);
+    const dir = vector.sub(this.camera.position).normalize();
+    const distance = -this.camera.position.z / dir.z;
+    this.currenPosition = this.camera.position
+      .clone()
+      .add(dir.multiplyScalar(distance));
+
+    const pos = this.particles.geometry.attributes.position;
+    this.buttom = true;
+    this.data.ease = 0.01;
+  }
+
+  onTouchMove(event) {
+    // Prevent default to avoid scrolling
+    event.preventDefault();
+
+    const touch = event.touches[0];
+    // Convert touch to mouse coordinates
+    this.mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+  }
+
+  onTouchEnd(event) {
+    // Prevent default
+    event.preventDefault();
+
+    this.buttom = false;
+    this.data.ease = 0.05;
   }
 
   render(level) {
