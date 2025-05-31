@@ -1,6 +1,35 @@
 {
     "projects" : [
         {
+            "title": "Portfolio Craft",
+            "image": "../images/portfolio-craft-project.png",
+            "description": "Build your own Portfolio Website without coding with Portfolio Craft",
+            "links": [
+                {
+                    "url": "https://portfolio-craft.tech/",
+                    "icon": "https://www.portfolio-craft.tech/logo.png",
+                    "alt": "Portfolio Craft Website"
+                },
+                {
+                    "url": "https://www.instagram.com/portfolio__craft/",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+                    "alt": "Portfolio Craft's Instagram"
+                },
+                {
+                    "url": "https://www.producthunt.com/products/portfoliocraft",
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXiYGuwes-FdGcH3pSf-fY4oPI5BFEK5WZg&s",
+                    "alt": "Product Hunt Link"
+                }
+            ],
+            "teammates": [
+                {
+                    "url": "https://github.com/AgrawalDrishti",
+                    "avatar": "https://avatars.githubusercontent.com/u/102616255",
+                    "alt": "Drishti Agrawal"
+                }
+            ]
+        },
+        {
             "title": "Custom Kafka Impl.",
             "image": "./images/kafka-project.png",
             "description": "LinkedIn's Proposed Kafka Implementation in JavaScript",
