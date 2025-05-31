@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" http-equiv="X-UA-Compatible" name="welcome page" content="Anadi Sharma, IITian, Software Engineer, IIT Jodhpur, Portfolio">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Charm&family=Courgette&family=Noto+Nastaliq+Urdu:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta
+      charset="UTF-8"
+      http-equiv="X-UA-Compatible"
+      name="welcome page"
+      content="Anadi Sharma, IITian, Software Engineer, IIT Jodhpur, Portfolio"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm&family=Courgette&family=Noto+Nastaliq+Urdu:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="three.css" />
     <title>Asharma538 - Anadi Sharma</title>
-    <link rel="shortcut icon" href="./images/cursor.png" type="image/x-icon">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KC29K2JH6F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="shortcut icon" href="./images/cursor.png" type="image/x-icon" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KC29K2JH6F"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-KC29K2JH6F');
-</script>
-<body>
+    gtag("config", "G-KC29K2JH6F");
+  </script>
+
+  <body>
     <div class="trapy_idx"></div>
-    <div class="wlcm-txt">
-        Heya, Anadi Sharma here
-    </div>
     <nav class="abt_nav">
-        <div class="navbs">
-            <button class="projectsb" onclick="location.href='projects.html' ">
-                Projects
-            </button>
-            <button class="" onclick="location.href = 'skills.html' ">
-                Skills
-            </button>
-            <button class="righ" onclick="location.href='about.html'">
-                About
-            </button>
-        </div>
+      <div class="navbs">
+        <button class="projectsb" onclick="location.href='projects.html' ">
+          Projects
+        </button>
+        <button class="" onclick="location.href = 'skills.html' ">
+          Skills
+        </button>
+        <button class="righ" onclick="location.href='about.html'">About</button>
+      </div>
     </nav>
     <div class="trapy3"></div>
 
-    <main id="main_canv"></main>
+    <script type="x-shader/x-vertex" id="vertexshader">
+
+      attribute float size;
+      attribute vec3 customColor;
+      varying vec3 vColor;
+
+      void main() {
+
+        vColor = customColor;
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_PointSize = size * ( 300.0 / -mvPosition.z );
+        gl_Position = projectionMatrix * mvPosition;
+
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="fragmentshader">
+
+      uniform vec3 color;
+      uniform sampler2D pointTexture;
+
+      varying vec3 vColor;
+
+      void main() {
+
+        gl_FragColor = vec4( color * vColor, 1.0 );
+        gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+
+      }
+    </script>
+    <div id="magic"></div>
+    <div class="playground"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="particletextmix.js"></script>
     <script src="vanta_rings.js"></script>
     <script>
-        VANTA.RINGS({
-          el: "#main_canv",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          backgroundColor: 0x50c2c
-        })
+      VANTA.RINGS({
+        el: "#main_canv",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: 0x50c2c,
+      });
     </script>
-</body>
+  </body>
 </html>
