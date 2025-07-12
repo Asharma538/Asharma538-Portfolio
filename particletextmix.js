@@ -147,6 +147,11 @@ class CreateParticles {
     container.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
     container.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
     container.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: false });
+
+    const playground = document.querySelector(".playground");
+    playground.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
+    playground.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
+    playground.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: false });
   }
 
   onMouseDown(event) {
