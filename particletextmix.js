@@ -143,9 +143,10 @@ class CreateParticles {
     document.addEventListener("mouseup", this.onMouseUp.bind(this));
 
     // Touch events
-    document.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
-    document.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
-    document.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: false });
+    const container = document.querySelector("#magic");
+    container.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
+    container.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
+    container.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: false });
   }
 
   onMouseDown(event) {
