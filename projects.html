@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Charm&family=Courgette&family=Noto+Nastaliq+Urdu:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/cursor.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm&family=Courgette&family=Noto+Nastaliq+Urdu:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/cursor.png" type="image/x-icon" />
     <title>My Projects</title>
-</head>
-<body class="black_body">
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KC29K2JH6F"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KC29K2JH6F");
+  </script>
+
+  <body class="black_body">
     <div class="trapy_idx"></div>
     <nav class="abt_nav">
-        <div class="navbs">
-            <button class="" onclick="location.href='index.html' ">
-                Home
-            </button>
-            <button class="" onclick="location.href='projects.html' ">
-                Projects
-            </button>
-            <button class="" onclick="location.href = 'skills.html' ">
-                Skills
-            </button>
-            <button class="" onclick="location.href='about.html'">
-                About
-            </button>
-        </div>
+      <div class="navbs">
+        <button class="" onclick="location.href='index.html' ">Home</button>
+        <button class="" onclick="location.href='projects.html' ">
+          Projects
+        </button>
+        <button class="" onclick="location.href = 'skills.html' ">
+          Skills
+        </button>
+        <button class="" onclick="location.href='about.html'">About</button>
+      </div>
     </nav>
-    
+
     <div class="project-tile-cntnr"></div>
     <div class="sized-box"></div>
 
-    <div class="project-bg-text">
-        Asharma538
-    </div>
+    <div class="project-bg-text">Asharma538</div>
     <div class="trapy3"></div>
 
     <script>
-        function generateProjectTile(project) {
-            const projectTile = document.createElement('div');
-            projectTile.classList.add('project-tile');
+      function generateProjectTile(project) {
+        const projectTile = document.createElement("div");
+        projectTile.classList.add("project-tile");
 
-            const titleElement = document.createElement('div');
-            titleElement.classList.add('title');
-            titleElement.textContent = project.title;
+        const titleElement = document.createElement("div");
+        titleElement.classList.add("title");
+        titleElement.textContent = project.title;
 
-            const imageElement = document.createElement('img');
-            imageElement.src = project.image;
-            imageElement.alt = "";
+        const imageElement = document.createElement("img");
+        imageElement.src = project.image;
+        imageElement.alt = "";
 
-            const descriptionElement = document.createElement('div');
-            descriptionElement.classList.add('project-desc');
-            descriptionElement.textContent = project.description;
+        const descriptionElement = document.createElement("div");
+        descriptionElement.classList.add("project-desc");
+        descriptionElement.textContent = project.description;
 
-            const linksElement = document.createElement('div');
-            linksElement.classList.add('links');
+        const linksElement = document.createElement("div");
+        linksElement.classList.add("links");
 
-            project.links.forEach(link => {
-                const linkElement = document.createElement('a');
-                linkElement.classList.add('link');
-                linkElement.href = link.url;
+        project.links.forEach((link) => {
+          const linkElement = document.createElement("a");
+          linkElement.classList.add("link");
+          linkElement.href = link.url;
 
-                const iconElement = document.createElement('img');
-                iconElement.src = link.icon;
-                iconElement.alt = link.alt;
+          const iconElement = document.createElement("img");
+          iconElement.src = link.icon;
+          iconElement.alt = link.alt;
 
-                linkElement.appendChild(iconElement);
-                linksElement.appendChild(linkElement);
+          linkElement.appendChild(iconElement);
+          linksElement.appendChild(linkElement);
+        });
+
+        const hdgLinks = document.createElement("div");
+        hdgLinks.classList.add("hdg");
+        hdgLinks.textContent = "Links:";
+
+        const teammatesElement = document.createElement("div");
+        teammatesElement.classList.add("teammates");
+
+        project.teammates.forEach((teammate) => {
+          const teammateElement = document.createElement("a");
+          teammateElement.href = teammate.url;
+
+          const avatarElement = document.createElement("img");
+          avatarElement.src = teammate.avatar;
+          avatarElement.alt = teammate.alt;
+
+          teammateElement.appendChild(avatarElement);
+          teammatesElement.appendChild(teammateElement);
+        });
+
+        const hdgTeammates = document.createElement("div");
+        hdgTeammates.classList.add("hdg");
+        hdgTeammates.textContent = "With:";
+
+        projectTile.appendChild(titleElement);
+        projectTile.appendChild(imageElement);
+        projectTile.appendChild(descriptionElement);
+        projectTile.appendChild(hdgLinks);
+        projectTile.appendChild(linksElement);
+        projectTile.appendChild(hdgTeammates);
+        projectTile.appendChild(teammatesElement);
+
+        return projectTile;
+      }
+
+      function loadprojects() {
+        fetch("data/projects.json")
+          .then((res) => res.json())
+          .then((res) => res.projects)
+          .then((projects) => {
+            const projectContainer = document.querySelector(
+              ".project-tile-cntnr"
+            );
+            projects.forEach((project) => {
+              const projectTile = generateProjectTile(project);
+              projectContainer.appendChild(projectTile);
             });
+          });
+      }
 
-            const hdgLinks = document.createElement('div');
-            hdgLinks.classList.add('hdg');
-            hdgLinks.textContent = "Links:";
-
-            const teammatesElement = document.createElement('div');
-            teammatesElement.classList.add('teammates');
-
-            project.teammates.forEach(teammate => {
-                const teammateElement = document.createElement('a');
-                teammateElement.href = teammate.url;
-
-                const avatarElement = document.createElement('img');
-                avatarElement.src = teammate.avatar;
-                avatarElement.alt = teammate.alt;
-
-                teammateElement.appendChild(avatarElement);
-                teammatesElement.appendChild(teammateElement);
-            });
-
-            const hdgTeammates = document.createElement('div');
-            hdgTeammates.classList.add('hdg');
-            hdgTeammates.textContent = "With:";
-
-            projectTile.appendChild(titleElement);
-            projectTile.appendChild(imageElement);
-            projectTile.appendChild(descriptionElement);
-            projectTile.appendChild(hdgLinks);
-            projectTile.appendChild(linksElement);
-            projectTile.appendChild(hdgTeammates);
-            projectTile.appendChild(teammatesElement);
-
-            return projectTile;
-        }
-        
-        function loadprojects () {
-            fetch('data/projects.json')
-            .then((res) => res.json())
-            .then((res) => res.projects)
-            .then((projects)=>{
-                const projectContainer = document.querySelector('.project-tile-cntnr');
-                projects.forEach(project => {
-                    const projectTile = generateProjectTile(project);
-                        projectContainer.appendChild(projectTile);
-                    }
-                );
-            })
-        }
-        
-        loadprojects();
+      loadprojects();
     </script>
-</body>
+  </body>
 </html>
