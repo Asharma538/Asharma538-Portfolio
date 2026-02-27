@@ -2,20 +2,13 @@
     "projects" : [
         {
             "title": "Loble",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
-            "description": "Production grade L4 TCP Load Balancer with Round Robin, Weighted and IP Hash strategies",
+            "image": "../images/loble.png",
+            "description": "Production grade L4 TCP Load Balancer with Round Robin, Random balancing strategies with Weights",
             "links": [
                 {
                     "url": "https://github.com/Asharma538/loble",
                     "icon": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
                     "alt": "Github Link"
-                }
-            ],
-            "teammates": [
-                {
-                    "url": "https://github.com/Asharma538",
-                    "avatar": "https://github.com/Asharma538.png",
-                    "alt": "Asharma538"
                 }
             ]
         },

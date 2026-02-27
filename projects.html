@@ -90,32 +90,36 @@
         hdgLinks.classList.add("hdg");
         hdgLinks.textContent = "Links:";
 
-        const teammatesElement = document.createElement("div");
-        teammatesElement.classList.add("teammates");
-
-        project.teammates.forEach((teammate) => {
-          const teammateElement = document.createElement("a");
-          teammateElement.href = teammate.url;
-
-          const avatarElement = document.createElement("img");
-          avatarElement.src = teammate.avatar;
-          avatarElement.alt = teammate.alt;
-
-          teammateElement.appendChild(avatarElement);
-          teammatesElement.appendChild(teammateElement);
-        });
-
-        const hdgTeammates = document.createElement("div");
-        hdgTeammates.classList.add("hdg");
-        hdgTeammates.textContent = "With:";
-
         projectTile.appendChild(titleElement);
         projectTile.appendChild(imageElement);
         projectTile.appendChild(descriptionElement);
         projectTile.appendChild(hdgLinks);
         projectTile.appendChild(linksElement);
-        projectTile.appendChild(hdgTeammates);
-        projectTile.appendChild(teammatesElement);
+
+        if (project.teammates && project.teammates.length > 0) {
+
+          const teammatesElement = document.createElement("div");
+          teammatesElement.classList.add("teammates");
+          
+          project.teammates.forEach((teammate) => {
+            const teammateElement = document.createElement("a");
+            teammateElement.href = teammate.url;
+            
+            const avatarElement = document.createElement("img");
+            avatarElement.src = teammate.avatar;
+            avatarElement.alt = teammate.alt;
+            
+            teammateElement.appendChild(avatarElement);
+            teammatesElement.appendChild(teammateElement);
+          });
+          
+          const hdgTeammates = document.createElement("div");
+          hdgTeammates.classList.add("hdg");
+          hdgTeammates.textContent = "With:";
+          projectTile.appendChild(hdgTeammates);
+          projectTile.appendChild(teammatesElement);
+        }
+
 
         return projectTile;
       }
