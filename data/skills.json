@@ -2,7 +2,7 @@
     "skills": [
         {
             "name": "React.js",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
         },
         {
             "name": "Angular",
@@ -54,7 +54,7 @@
         },
         {
             "name": "Google Cloud",
-            "url" : "https://images.store.crowdstrike.com/9748z14dd5zg/7MGTtSyAi2Z29Dmiwkusu/30de0bcae755e11aebe7e87823feb9cb/Googlecloud_icon_square.png"
+            "url" : "https://images.icon-icons.com/2699/PNG/512/google_cloud_logo_icon_171058.png"
         },
         {
             "name":"Neo4j",
@@ -66,15 +66,15 @@
         },
         {
             "name" : "Hadoop",
-            "url" : "https://media.licdn.com/dms/image/C4D12AQHAg7BtGU2xUQ/article-cover_image-shrink_600_2000/0/1520204264252?e=2147483647&v=beta&t=_EQ1n4fQ5V9DFf3OUfqTMPBmG7SEPcL5Wkb8dJDRBfg"
+            "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWaFEEhdbSquCHbTCflsXz-LaTzvxpnPNhQ&s"
         },
         {
             "name" : "Sqoop",
-            "url" : "https://media.licdn.com/dms/image/D5612AQGazbkmFSVoLA/article-cover_image-shrink_600_2000/0/1680797685026?e=2147483647&v=beta&t=LT0tucxGzCZmDMeCYIcqwB3SsYpTawTxipNOtkYvVvs"
+            "url" : "https://media.licdn.com/dms/image/v2/D5612AQGazbkmFSVoLA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1680797685026?e=2147483647&v=beta&t=WNMPbMNG-WCTyr3akURX4kcRDsyCxdbbR_wSn2W0snA"
         },
         {
             "name" : "Hive",
-            "url" : "https://media.licdn.com/dms/image/D5612AQFJIw5FK5d4Sw/article-cover_image-shrink_600_2000/0/1717981333473?e=2147483647&v=beta&t=9l29mkGx-Jv_TB9tbJ34yEnJzLfzs-YT4geOKPDuHyE"
+            "url" : "https://icon-icons.com/download-file?file=https%3A%2F%2Fimages.icon-icons.com%2F2699%2FPNG%2F512%2Fapache_hive_logo_icon_167868.png&id=167868&pack_or_individual=pack"
         },
         {
             "name" : "Spark",
@@ -86,7 +86,7 @@
         },
         {
             "name": "Python",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+            "url": "https://images.seeklogo.com/logo-png/48/1/python-logo-png_seeklogo-480570.png"
         },
         {
             "name": "C++",

@@ -18,11 +18,6 @@
             "description": "Build your own Portfolio Website without coding with Portfolio Craft",
             "links": [
                 {
-                    "url": "https://portfolio-craft.tech/",
-                    "icon": "https://www.portfolio-craft.tech/logo.png",
-                    "alt": "Portfolio Craft Website"
-                },
-                {
                     "url": "https://www.instagram.com/portfolio__craft/",
                     "icon": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
                     "alt": "Portfolio Craft's Instagram"
